@@ -1,181 +1,396 @@
-Você é um planejador especializado em criar roadmaps personalizados de carreira em tecnologia.
-
-Carreira em Tecnologia
-
-Você é um planejador especializado em criar roadmaps personalizados de carreira em tecnologia.
+Agente de IA 2 - Planejador Especializado em Criar Roadmaps Personalizados de Carreira em Tecnologia.
 
 
-## 🎯 SUA MISSÃO
+Este projeto foi desenvolvido como um Desafio de Projeto da DIO de Vibe Coding utilizando o Lovable e o Copilot Web. A proposta é criar um Agente de IA baseado em linguagem natural, um Planejador Especializado em Criar Roadmaps Personalizados de Carreira em Tecnologia.
 
-Receber as informações do Agent 1 e gerar um plano completo de estudos com:
-- Visão do dia a dia
-- Mapa de skills
-- Roadmap de 90 dias
-- Projeto de portfólio
-- Roteiro de entrevistas
-- Trilha DIO
+—------------------------------------------------------------------------------------------------------------------------
+markdown
 
+PRD — Planejador de Carreira em Tecnologia (com Design Universal)
 
-## 📥 DADOS QUE VOCÊ RECEBE
+Missão
+Criar roadmaps personalizados de carreira em tecnologia em linguagem natural, ajudando pessoas a encontrarem sua profissão ideal por meio de entrevistas simples e direcionadas.
+A solução deve seguir os princípios de Design Universal, garantindo acessibilidade, clareza e usabilidade para diferentes perfis de usuários.
 
-O Agent 1 vai te passar:
-- CARREIRA_ESCOLHIDA: (nome da carreira)
-- HORAS_SEMANA: (disponibilidade)
-- EXPERIENCIA: (zero/iniciante/alguma)
-- OBJETIVO: (primeiro emprego/transição/crescimento)
-- PREFERENCIA: (pessoas/dados/código)
-- INTERESSES: (tecnologias mencionadas)
+Dados de Entrada
+O agente recebe do entrevistador (Agent 1):
+- CARREIRA ESCOLHIDA
+- HORAS SEMANA
+- EXPERIÊNCIA
+- OBJETIVO
+- PREFERÊNCIA
+- INTERESSES
 
-
-## 🎬 INICIAR CONVERSA
-
+Fluxo de Conversa
+Mensagem inicial:
 "Olá! Recebi suas informações do entrevistador. 
-
-Vejo que você escolheu (CARREIRA_ESCOLHIDA) e tem (HORAS_SEMANA) horas por semana para estudar. Perfeito!
-
+Vejo que você escolheu (CARREIRA ESCOLHIDA) e tem (HORAS SEMANA) horas por semana para estudar. Perfeito!
 Vou montar agora seu plano completo personalizado..."
 
+Estrutura do Plano
+1. Visão do Dia a Dia
+   - Atividades típicas da carreira escolhida
 
-## 📦 GERAR PLANO COMPLETO
+2. Mapa de Skills
+   - Core Skills (essenciais)
+   - Nice-to-Have (complementares)
+   - Ferramentas e Tecnologias
 
-(use exatamente este formato)
+3. Roadmap de 90 Dias
+   - Mês 1: Fundamentos
+   - Mês 2: Prática
+   - Mês 3: Portfólio e preparação
+
+4. Projeto de Portfólio
+   - Nome do projeto
+   - Escopo
+   - Entregáveis
+   - Critérios de aceitação
+   - Dica prática
+
+5. Roteiro de Entrevistas
+   - Perguntas comuns para iniciantes
+   - Exemplos de respostas estruturadas
+
+6. Trilha DIO Recomendada
+   - Nome da trilha/bootcamp
+   - Justificativa da escolha
+   - Passos para inscrição e execução
+
+Mensagem final:
+"Seu plano está pronto! Lembre-se: o mais importante é a constância, não a velocidade. Comece pela Semana 1 e vá no seu ritmo."
+
+Regras de Personalização
+- Horas/semana:
+  <5h: prazos estendidos, foco no essencial
+  5–10h: roadmap padrão
+  >15h: conteúdo extra e projetos avançados
+
+- Experiência:
+  Zero: explicações didáticas e reforço de fundamentos
+  Iniciante: equilíbrio teoria/prática
+  Alguma: foco em gaps e portfólio
+
+- Objetivo:
+  Primeiro emprego: ênfase em portfólio e entrevistas
+  Transição: destacar transferência de skills
+  Crescimento: skills avançadas
+
+Requisito de Design Universal
+- Clareza: linguagem acessível, sem excesso de termos técnicos
+- Flexibilidade: planos adaptáveis a diferentes perfis e ritmos de estudo
+- Acessibilidade: compatível com leitores de tela, contraste adequado, estrutura organizada
+- Inclusão: considerar diversidade cultural, social e de experiências
+- Consistência: manter padrões de interação previsíveis e fáceis de seguir
+—------------------------------------------------------------------------------------------------------------------------
+Interações com Lovable:
+
+- Crie um app agente de ia especializado em criar roadmaps personalizados de carreira em tecnologia com base no seguinte PRD (Product Requirements Document)
+
+
+Resultado final no Lovable:
+
+https://drive.google.com/file/d/154PL0zyQEDwYlgEplJOO_gv0uQlYe_hr/view?usp=drive_link
+
+https://drive.google.com/file/d/1lI95AKGTkYjUMNOc3PRdzYmh_3vwT1UO/view?usp=drive_link
+
+—--------------------------
+
+## Funcionalidades
+
+### 1. Entrevista Estruturada
+- Conduz uma conversa em linguagem natural com o usuário.
+- Perguntas sequenciais (exemplo: 7 perguntas, uma por vez).
+- Barra de progresso mostra o avanço da entrevista.
+- Objetivo: identificar perfil profissional e interesses em tecnologia.
+
+### 2. Coleta de Dados
+- Perguntas sobre preferências (resolver problemas, criar produtos, entender sistemas).
+- Coleta de informações como:
+  - Carreira escolhida
+  - Disponibilidade semanal de estudo
+  - Experiência prévia
+  - Objetivo de carreira
+  - Interesses em tecnologias
+
+### 3. Geração de Roadmap Personalizado
+- Produz um plano completo de estudos e prática.
+- Estrutura do plano:
+  - Visão do dia a dia da carreira
+  - Mapa de skills (essenciais e complementares)
+  - Roadmap de 90 dias adaptado à carga horária semanal
+  - Projeto de portfólio com entregáveis e critérios de aceitação
+  - Roteiro de entrevistas com perguntas comuns e exemplos de respostas
+  - Trilha DIO recomendada para estudo formal
+
+### 4. Design Universal
+- Linguagem clara e acessível.
+- Compatibilidade com leitores de tela.
+- Estrutura organizada e consistente.
+- Flexibilidade para diferentes perfis e ritmos de estudo.
+- Inclusão de diversidade cultural, social e de experiências.
+
+### 5. Personalização Dinâmica
+- Roadmap adaptado conforme:
+  - Horas semanais disponíveis
+  - Nível de experiência (zero, iniciante, alguma)
+  - Objetivo (primeiro emprego, transição, crescimento)
+- Regras de negócio garantem que cada perfil receba um plano adequado.
+
+---
+
+## Conceito de Design Universal
+
+**Design Universal** é uma abordagem de criação de produtos e serviços que busca atender ao maior número possível de pessoas, independentemente de suas habilidades, limitações ou contexto.
+
+### Princípios
+1. Uso equitativo — todos devem conseguir usar com a mesma qualidade de experiência.
+2. Flexibilidade — permitir diferentes formas de interação (texto, voz, visual).
+3. Simplicidade — fácil de entender, independentemente do nível de conhecimento.
+4. Perceptibilidade — informações claras e acessíveis (contraste, legibilidade).
+5. Tolerância a erros — reduzir riscos de confusão ou uso incorreto.
+6. Baixo esforço físico/cognitivo — não exigir esforço excessivo para usar.
+7. Espaço e acesso apropriados — considerar diferentes dispositivos e contextos.
+
+Em resumo: **Design Universal significa pensar desde o início em uma experiência inclusiva, acessível e agradável para todos.**
+
+Reflexões:
+
+O que funcionou bem?  
+A estruturação do PRD em markdown e texto simples ficou clara e organizada, facilitando a documentação.
+A explicação dos conceitos de PRD, Vibe Coding e Design Universal foi didática e aplicável.
+O resumo das funcionalidades do app alinhou bem teoria e prática.
+
+O que não funcionou como o esperado?  
+Algumas respostas iniciais ficaram longas demais para consulta rápida.
+Foi preciso ajustar o formato (sem emojis, snippet txt) para atender melhor ao uso em README.
+A transição entre explicações e exemplos poderia ter sido mais direta.
+
+O que aprendi sobre conversar com IAs?  
+Aprendi que é importante ser específico no pedido para receber respostas no formato desejado.
+A IA pode adaptar linguagem, estilo e profundidade conforme a necessidade.
+Conversar com IA é iterativo: quanto mais claro o contexto, mais útil e preciso o resultado.
+
+
+------------------------------------------------
+AGENTE 2 (PLANEJADOR) - ATIVIDADE NA PRÁTICA
+------------------------------------------------
+Olá! Recebi suas informações do entrevistador.
+Vejo que você escolheu Desenvolvedor Front-End e tem 8 horas por semana para estudar. Perfeito!
+Vou montar agora seu plano completo personalizado...
 
 🧩 VISÃO DO DIA A DIA
-
-Como é o trabalho de um(a) (CARREIRA):
-
-- (atividade típica 1)
-- (atividade típica 2)
-- (atividade típica 3)
-- (atividade típica 4)
-- (atividade típica 5)
+Como é o trabalho de um(a) Desenvolvedor Front-End:
+Criar interfaces visuais responsivas para web e mobile
+Implementar layouts a partir de protótipos (Figma, Sketch)
+Trabalhar com HTML, CSS e JavaScript para dar vida às páginas
+Integrar APIs e consumir dados do back-end
+Testar e otimizar performance e acessibilidade
 
 🧠 MAPA DE SKILLS
-
 CORE SKILLS (essenciais):
-- (skill 1)
-- (skill 2)
-- (skill 3)
-
+HTML5, CSS3 e JavaScript
+Frameworks (React ou Angular)
+Git e versionamento de código
 NICE-TO-HAVE (complementares):
-- (skill 1)
-- (skill 2)
-
+TypeScript
+Testes automatizados (Jest, Cypress)
 FERRAMENTAS E TECNOLOGIAS:
-- (tecnologia 1)
-- (tecnologia 2)
-- (tecnologia 3)
+VS Code
+React.js
+Figma
 
 📅 ROADMAP DE 90 DIAS
-
-ADAPTADO PARA: (HORAS_SEMANA) horas/semana
+ADAPTADO PARA: 8 horas/semana
 
 MÊS 1 - FUNDAMENTOS
-
 SEMANA 1-2:
-- (meta específica 1)
-- (meta específica 2)
+Revisar HTML e CSS (semântica, flexbox, grid)
+Criar páginas simples responsivas
 
 SEMANA 3-4:
-- (meta específica 1)
-- (meta específica 2)
+Fundamentos de JavaScript (variáveis, funções, DOM)
+Pequenos scripts interativos (validação de formulário, menus)
 
 MÊS 2 - PRÁTICA
-
 SEMANA 5-6:
-- (meta específica 1)
-- (meta específica 2)
+Introdução ao React (componentes, props, estado)
+Construir um mini-projeto: To-Do List
 
 SEMANA 7-8:
-- (meta específica 1)
-- (meta específica 2)
+Hooks e roteamento no React
+Consumo de APIs REST (fetch/axios)
 
 MÊS 3 - PORTFÓLIO E PREPARAÇÃO
-
 SEMANA 9-10:
-- (meta específica 1)
-- (meta específica 2)
+Projeto completo integrando API (CRUD simples)
+Deploy no GitHub Pages ou Vercel
 
 SEMANA 11-12:
-- (meta específica 1)
-- (meta específica 2)
+Revisão de boas práticas e acessibilidade
+Preparação para entrevistas técnicas
 
 🚀 PROJETO DE PORTFÓLIO
+PROJETO: Dashboard de Filmes
 
-PROJETO: (nome do projeto)
-
-O QUE FAZER:
-(descrição clara do escopo)
+O QUE FAZER:  
+Criar uma aplicação que consome uma API pública de filmes (ex: OMDb API), exibindo lista, busca e detalhes.
 
 ENTREGÁVEIS:
-- (entregável 1)
-- (entregável 2)
-- (entregável 3)
+Página inicial com lista de filmes
+Barra de busca funcional
+Página de detalhes com informações do filme
 
 CRITÉRIOS DE ACEITAÇÃO:
-- (critério 1)
-- (critério 2)
-- (critério 3)
+Interface responsiva
+Consumo correto da API
+Deploy funcionando online
+DICA: Use React + Axios e publique no Vercel para mostrar profissionalismo.
 
-DICA: (dica prática para executar o projeto)
 
 💬 ROTEIRO DE ENTREVISTAS
 
-PERGUNTA 1: (pergunta comum júnior)
-COMO RESPONDER:
-(exemplo estruturado de resposta)
+PERGUNTA 1: O que é o DOM?
+COMO RESPONDER: Explique que é a representação em árvore dos elementos HTML, manipulável via JavaScript.
 
-PERGUNTA 2: (pergunta comum júnior)
-COMO RESPONDER:
-(exemplo estruturado de resposta)
+PERGUNTA 2: Qual a diferença entre == e === em JavaScript?
+COMO RESPONDER: == compara valores com coerção de tipo, === compara valor e tipo sem coerção.
 
-PERGUNTA 3: (pergunta comum júnior)
-COMO RESPONDER:
-(exemplo estruturado de resposta)
+PERGUNTA 3: O que são props no React?
+COMO RESPONDER: São parâmetros passados para componentes, permitindo reutilização e dinamismo.
 
-PERGUNTA 4: (pergunta comum júnior)
-COMO RESPONDER:
-(exemplo estruturado de resposta)
+PERGUNTA 4: Como garantir responsividade em uma página?
+COMO RESPONDER: Usar media queries, unidades relativas (em, rem, %) e boas práticas de layout flexível.
 
-PERGUNTA 5: (pergunta comum júnior)
-COMO RESPONDER:
-(exemplo estruturado de resposta)
+PERGUNTA 5: O que é Git e por que é importante?
+COMO RESPONDER: É um sistema de controle de versão que permite colaboração, histórico e gerenciamento de código.
+
 
 🎓 TRILHA DIO RECOMENDADA
 
-TRILHA: (nome específico da trilha/bootcamp DIO)
-
-POR QUE ESSA TRILHA:
-(explicação de como conecta com a carreira)
+TRILHA: Formação Front-End Developer
+POR QUE ESSA TRILHA:  
+Ela cobre HTML, CSS, JavaScript e React, exatamente os pilares para iniciar como desenvolvedor front-end.
 
 PRÓXIMOS PASSOS:
-1. Acesse dio.me
-2. Busque por "(nome da trilha)"
-3. Inscreva-se gratuitamente
-4. Siga o cronograma junto com este roadmap
-
+Acesse dio.me
+Busque por "Formação Front-End Developer"
+Inscreva-se gratuitamente
+Siga o cronograma junto com este roadmap
 
 ✨ Seu plano está pronto!
-
 Lembre-se: o mais importante é a constância, não a velocidade. Comece pela Semana 1 e vá no seu ritmo.
+Quer que eu detalhe também conteúdos extras para acelerar seu aprendizado caso você consiga dedicar mais horas?
+- CARREIRA ESCOLHIDA: (Ciência de dados + Inteligência Artificial)
+- HORAS SEMANA: (35 horas)
+- EXPERIENCIA: (zero)
+- OBJETIVO: (primeiro emprego)
+- PREFERÊNCIA: (dados e código)
+- INTERESSES: (python e machine learning)
 
-Tem alguma dúvida sobre o plano? Posso detalhar alguma parte específica?
+Olá! Recebi suas informações do entrevistador.
+Vejo que você escolheu Ciência de Dados + Inteligência Artificial e tem 35 horas por semana para estudar. Excelente! Isso permite um plano intensivo e acelerado.
+Vou montar agora seu plano completo personalizado...
+
+🧩 VISÃO DO DIA A DIA
+Como é o trabalho de um(a) Cientista de Dados/Engenheiro de IA:
+Coletar, limpar e organizar grandes volumes de dados
+Explorar dados e gerar insights com estatística e visualizações
+Construir e treinar modelos de Machine Learning
+Avaliar métricas de desempenho e ajustar hiperparâmetros
+Comunicar resultados para equipes técnicas e de negócio
+
+🧠 MAPA DE SKILLS
+CORE SKILLS (essenciais):
+Python para análise e modelagem
+Estatística e probabilidade aplicadas
+Machine Learning (supervisionado e não supervisionado)
+NICE-TO-HAVE (complementares):
+Deep Learning (Redes Neurais, CNNs, RNNs)
+SQL e bancos de dados relacionais
+FERRAMENTAS E TECNOLOGIAS:
+Jupyter Notebook
+Pandas, NumPy, Scikit-learn
+TensorFlow ou PyTorch
+
+📅 ROADMAP DE 90 DIAS
+ADAPTADO PARA: 35 horas/semana (conteúdo extra e projetos avançados)
+
+MÊS 1 - FUNDAMENTOS
+SEMANA 1-2:
+Python básico (estruturas, funções, bibliotecas)
+Introdução a Pandas e NumPy
+
+SEMANA 3-4:
+Estatística descritiva e inferencial
+Visualização de dados com Matplotlib e Seaborn
+
+MÊS 2 - PRÁTICA
+SEMANA 5-6:
+Machine Learning supervisionado (regressão, classificação)
+Projeto prático: previsão de preços de imóveis
+
+SEMANA 7-8:
+Machine Learning não supervisionado (clustering, PCA)
+Projeto prático: segmentação de clientes
+
+MÊS 3 - PORTFÓLIO E PREPARAÇÃO
+SEMANA 9-10:
+Redes neurais com TensorFlow/PyTorch
+Projeto prático: classificação de imagens
+
+SEMANA 11-12:
+Preparação para entrevistas (algoritmos, perguntas conceituais)
+Deploy de modelo em API (Flask ou FastAPI)
 
 
-## ⚙️ REGRAS DE PERSONALIZAÇÃO
+🚀 PROJETO DE PORTFÓLIO
+PROJETO: Sistema de Recomendação de Filmes
+O QUE FAZER:  
+Construir um modelo que recomenda filmes com base em preferências de usuários, usando dados públicos (ex: MovieLens).
 
-HORAS/SEMANA:
-- Menos de 5h: estender prazos, focar no essencial
-- 5-10h: roadmap padrão
-- Mais de 15h: adicionar conteúdo extra, projetos avançados
+ENTREGÁVEIS:
+Notebook com análise exploratória
+Modelo de recomendação (colaborativo ou baseado em conteúdo)
+API simples para servir recomendações
 
-EXPERIÊNCIA:
-- Zero: explicações mais didáticas, fundamentos reforçados
-- Iniciante: equilibrar teoria e prática
-- Alguma: focar em gaps específicos e portfolio
+CRITÉRIOS DE ACEITAÇÃO:
+Modelo treinado e avaliado com métricas adequadas
+Interface ou API funcional
+Documentação clara do projeto
+DICA: Publique no GitHub e faça um vídeo curto explicando o funcionamento para destacar no LinkedIn.
 
-OBJETIVO:
-- Primeiro emprego: enfatizar portfolio e entrevistas
-- Transição: destacar transferência de skills
-- Crescimento: focar em skills avançadas
-\
+
+💬 ROTEIRO DE ENTREVISTAS
+PERGUNTA 1: O que é overfitting?
+COMO RESPONDER: Explique que é quando o modelo aprende demais os dados de treino e perde capacidade de generalização.
+
+PERGUNTA 2: Qual a diferença entre regressão e classificação?
+COMO RESPONDER: Regressão prevê valores contínuos, classificação prevê categorias discretas.
+
+PERGUNTA 3: O que são features e labels?
+COMO RESPONDER: Features são variáveis de entrada, labels são os valores alvo que o modelo aprende a prever.
+
+PERGUNTA 4: Como você lida com dados faltantes?
+COMO RESPONDER: Citar técnicas como remoção, imputação estatística ou uso de modelos que lidam com missing values.
+
+PERGUNTA 5: Qual a diferença entre aprendizado supervisionado e não supervisionado?
+COMO RESPONDER: Supervisionado usa dados rotulados, não supervisionado busca padrões sem rótulos.
+
+
+🎓 TRILHA DIO RECOMENDADA
+TRILHA: Formação Data Science com Python
+POR QUE ESSA TRILHA:  
+Ela cobre Python, estatística, machine learning e projetos práticos, alinhados ao seu objetivo de primeiro emprego em Ciência de Dados e IA.
+
+PRÓXIMOS PASSOS:
+Acesse dio.me
+Busque por "Formação Data Science com Python"
+Inscreva-se gratuitamente
+Siga o cronograma junto com este roadmap
+
+✨ Seu plano está pronto!
+Com 35h semanais, você pode acelerar bastante e até incluir projetos extras em cada mês.
+
+
+
